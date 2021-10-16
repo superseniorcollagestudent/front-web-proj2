@@ -5,8 +5,9 @@ main{
    // this is the width of the portion we can see, the rest will be scrollable
   dispaly:flex;
   z-index:auto;
+  margin:0 auto;
   
- background-color:rgba(0,0,0,0);
+ background-color:rgba(0,0,0,.1);
 }
 
 
@@ -18,9 +19,9 @@ section{
   overflow:auto;
   max-hight:100px;
   margin:20px;
-  //background-color:rgba(0,0,0,.2);
+  
   .tile{
-    //background:rgba(0,0,0,.2); // this is just to show the edges of the tile 
+    
     position:relative;
     text-align:center;
     width:120px; // this is the width of each tile
@@ -45,26 +46,26 @@ section{
  header{
     background-color:#ebe8e7;
     display:flex;
-    justify-content:flex-start;
+    justify-content:center;
   margin-top:0;
    z-index:7;
    position:fixed;
    width:inherit;
 
     .tile{
-    //background:rgba(0,0,0,.1); // the edges of the tile while you lay it out
+    
 
     position:relative;
     text-align:center;
     width:120px; // this is the width of each tile
-    margin:30px 10px 30px 15px;
+    margin:30px 30px 30px 15px;
     display:flex;
     flex-direction:column;
     
     img{
       position:absolute;
       top:0;
-      left:18px;
+      left:20px;
       z-index:-1;
     }
   }
@@ -79,7 +80,7 @@ section{
   main{
     overflow:auto;
     width:330px;
-    background-color:rgba(0,0,0,.1);
+    
   }
   .row-11{
     display:flex;
@@ -92,7 +93,7 @@ section{
   main{
     overflow:auto;
     width:800px;
-    background-color:rgba(0,0,0,.1);
+    
   }
   header{
     display:flex;
@@ -106,7 +107,7 @@ section{
   main{
     overflow:auto;
     width:100vw;
-    background-color:rgba(0,0,0,.1);
+    
     dispaly:flex;
     justify-content:center;
     section{
