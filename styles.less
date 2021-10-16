@@ -1,0 +1,132 @@
+body{
+  margin:0;
+}
+main{
+   // this is the width of the portion we can see, the rest will be scrollable
+  dispaly:flex;
+  z-index:auto;
+  
+ background-color:rgba(0,0,0,0);
+}
+
+
+section{
+  display:flex;
+  width:1280px; 
+  justify-content:space-between;
+  marigin-left:30px;
+  overflow:auto;
+  max-hight:100px;
+  margin:20px;
+  //background-color:rgba(0,0,0,.2);
+  .tile{
+    //background:rgba(0,0,0,.2); // this is just to show the edges of the tile 
+    position:relative;
+    text-align:center;
+    width:120px; // this is the width of each tile
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    
+    img{
+      position:absolute;
+      top:0;
+      left:18px;
+      z-index:-1;
+    }
+  }
+}
+.scrollbar::-webkit-srcollbar{
+  width:100px;
+}
+.scrollbar{
+  overflow-x:auto;
+}
+ header{
+    background-color:#ebe8e7;
+    display:flex;
+    justify-content:flex-start;
+  margin-top:0;
+   z-index:7;
+   position:fixed;
+   width:inherit;
+
+    .tile{
+    //background:rgba(0,0,0,.1); // the edges of the tile while you lay it out
+
+    position:relative;
+    text-align:center;
+    width:120px; // this is the width of each tile
+    margin:30px 10px 30px 15px;
+    display:flex;
+    flex-direction:column;
+    
+    img{
+      position:absolute;
+      top:0;
+      left:18px;
+      z-index:-1;
+    }
+  }
+    
+  }
+.row-2{
+  overflow:auto;
+  width:1280px;
+}
+     
+@media screen and (min-width: 400px){
+  main{
+    overflow:auto;
+    width:330px;
+    background-color:rgba(0,0,0,.1);
+  }
+  .row-11{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+  }
+}
+@media screen and (min-width: 800px){
+  main{
+    overflow:auto;
+    width:800px;
+    background-color:rgba(0,0,0,.1);
+  }
+  header{
+    display:flex;
+    justify-content:center;
+    
+  }
+}
+
+
+@media screen and (min-width: 1000px){
+  main{
+    overflow:auto;
+    width:100vw;
+    background-color:rgba(0,0,0,.1);
+    dispaly:flex;
+    justify-content:center;
+    section{
+      width:inherit;
+      
+    }
+    .row-2{
+        width:inherit;
+      }
+  }
+  .row-11{
+    display:flex;
+    justify-content:center;
+    
+  }
+}
+.chinese {
+  font-size: 50px;
+}
+.english {
+  font-family: serif;
+  font-size: 20px;
+}
